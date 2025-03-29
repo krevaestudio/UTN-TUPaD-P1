@@ -1,0 +1,79 @@
+¿Qué es GitHub?
+- GitHub es una 'red social' para programadores, donde se suben proyectos, repositorios, tanto públicos como privados y, depiendiendo de esta propiedad, otros desarrolladores pueden copiar, colaborar o comentar en los mismos. Así como también crear su propia versión a partir de un fork (Clonar un proyecto a una cuenta propia)
+
+¿Cómo crear un repositorio en GitHub?
+- Se puede crear un repositorio en GitHub desde cero yendo al menú superior en el header de Github, en nuestro perfil y Create new... > Repository (O bien github.com/new)
+
+¿Cómo crear una rama en Git?
+- Ubicados en el directroio principal del proyecto y con el proyecto ya inicializado podemos crear una brancg con el comando git branch nombre-de-rama
+
+¿Cómo cambiar a una rama en Git?
+- para cambiar de rama en un proyecto de git, debemos escribir git checkout nombre-de-la-rama (Si queremos ir a la rama produccion escribrimos git checkout produccion)
+
+¿Cómo fusionar ramas en Git?
+- Para fusionar una rama utilizamos el comando merge. Situados en la rama a la que vamos a fusionarle contenido, abrimos consola y cn git merge le indicamos desde que rama se fusionará el contenido. Por ejemplo: queremos unir el contenido de la rama dev a la prod:
+git checkout prod
+git merge dev (Si surgen conflictor deberemos corregirlos con git)
+
+¿Cómo crear un commit en Git?
+- Con el comando git commit -m "Comentario sobre el commit". Y luego para enviarlo tipeamos git push origin rama-destino
+
+¿Cómo enviar un commit a GitHub?
+- Para mandar un commit a github tipeamos git push origin rama-destino
+
+¿Qué es un repositorio remoto?
+- Es un proyecto de programacion alojado en un servidor y accesible desde internet, como un repositorio en github
+
+¿Cómo agregar un repositorio remoto a Git?
+- Si queremos agregar un repositorio desde github podemos utilizar el comando git clone https://github/usuario/proyecto-aimportar.git, ubicados en la carpeta donde querramos que el proyecto se clone.
+
+¿Cómo empujar cambios a un repositorio remoto?
+- Para enviar cambios a un repositorio, y luego de haber declarado el commit, hacemos git push origin rama
+
+¿Cómo tirar de cambios de un repositorio remoto?
+- Para traer al proyecto local los cambios que se hayan realizado en el remoto, utilizamos el comando git pull, y si es necesario especificamos desde donde con git pull rama 
+
+¿Qué es un fork de repositorio?
+- Un fork de un repositorio es una copia fiel de un proyecto original realizado por otra persona, donde se copia a nuestro perfil y podremos trabajarlo independientemente. Poe ejemplo,si queremos desarrollar un navegador web, podemos 'forkear' el proyecto de Brave Browser y hacer nuestra version
+
+¿Cómo crear un fork de un repositorio?
+- Si lo hacemos desde GitHub, dentro de la raíz del proyecto tendremos la opción para realizar el Fork. Al hacer click nos pedirá la url (nombre del proyecto) que pondremos en nuestro perfil y si queremos forkear solo el main o todo el proyecto, además de agregar una descripción
+
+¿Cómo enviar una solicitud de extracción (pull request) a un repositorio?
+- Si tenemos, por ejemplo, un fork de un repositorio y hacemos cambios en él, si vamos al repo original desde donde hicimos el fork podremos ver que GitHub automáticamente detecta los cmabios y nos permite pedir una pull request bajo la leyenda "Discuss and review the changes in this comparison with others [boton de pull request azul]" y nso muestra qué es lo que está cambiado respecto del original
+
+¿Cómo aceptar una solicitud de extracción?
+- De forma parecida a lo anterior, las Pull requests aparecen en el repositorio mismo, donde el propietario puede revisar las mismas y aprobarlas, o no.
+
+¿Qué es un etiqueta en Git?
+- las etiquetas sirven para identificar commits particulares o que marcan algun hecho importante dentro del código y marcar un alias asociado al commit, por ejemplo, el commit de la version 1.0.0 de un programa o un commit con un bugfix
+
+¿Cómo crear una etiqueta en Git?
+- Para crear un tag escribimos en consola git tag release-25 (el tag se llamará release-25).
+para asignar el tag a un commit especifico podemos hacer git tag release-25 hashdelcommit
+
+¿Cómo enviar una etiqueta a GitHub?
+- para incluir las etiquetas, o tags, en un push, debemos hacerlo asi: git push origin --tags
+
+¿Qué es un historial de Git?
+- El historial de git, o git log, muestra el historial completo de modificaciones realizadas en un repositorio, incluyendo autor de cada commit, fecha, mensaje y hash
+
+¿Cómo ver el historial de Git?
+- para ver el historial completo escribimos en consola git log
+
+¿Cómo buscar en el historial de Git?
+- 
+
+¿Cómo borrar el historial de Git?
+
+¿Qué es un repositorio privado en GitHub?
+
+¿Cómo crear un repositorio privado en GitHub?
+
+¿Cómo invitar a alguien a un repositorio privado en GitHub?
+
+¿Qué es un repositorio público en GitHub?
+
+¿Cómo crear un repositorio público en GitHub?
+
+¿Cómo compartir un repositorio público en GitHub? 
