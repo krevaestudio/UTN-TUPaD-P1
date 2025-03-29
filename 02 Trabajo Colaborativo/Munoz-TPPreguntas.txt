@@ -62,18 +62,29 @@ para asignar el tag a un commit especifico podemos hacer git tag release-25 hash
 - para ver el historial completo escribimos en consola git log
 
 ¿Cómo buscar en el historial de Git?
-- 
+- Podemos navegar el historial de git con comandos como:
+git log unarama..main para buscar archivos en main pero que no esten en unarama
+git log --follow archivo.txt para buscar las modificaciones de un archivo puntual
+git log --grep="tp01" para bsucar un commit con cierta palabra o frase
 
 ¿Cómo borrar el historial de Git?
+-
 
 ¿Qué es un repositorio privado en GitHub?
+- Un repositorio privado solo permite que lo vea y edite el propietario del mismo, y todos aquellos que tengan permiso (Otorgado por el propietario)
 
 ¿Cómo crear un repositorio privado en GitHub?
+- Al crear un nuevo repositorio en GitHub, entre las opciones de creación está la opción de crearlo Público o Privado
 
 ¿Cómo invitar a alguien a un repositorio privado en GitHub?
+- El propietario del repositorio tiene la capacidad de invitar a otras personas a colaborar en el repo en Settings > Collaborators > Add People (permite buscar por nombre de usuario en GH, email, o nombre completo). O bien desde https://github.com/usuario/repositorio/settings/access
 
 ¿Qué es un repositorio público en GitHub?
+- En un repositorio público todos pueden ver los archivos y códigos, hacer forks y enviar push requests.
 
 ¿Cómo crear un repositorio público en GitHub?
+- Al crear un nuevo repositorio en GitHub, entre las opciones de creación está la opción de crearlo Público o Privado
 
-¿Cómo compartir un repositorio público en GitHub? 
+
+¿Cómo compartir un repositorio público en GitHub?
+- Para compartir un repositorio a su forma normal basta con copiar la URL del mismo, por ejemplo https://github.com/microsoft/PowerToys, si se quiere compartir la URL para trabajar en git, la URL es https://github.com/microsoft/PowerToys.git, o bien se puede descargar en un ZIP o importar a GH Desktop, también desde el link al repositorio normal
