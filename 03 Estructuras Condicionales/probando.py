@@ -39,3 +39,19 @@ else:
 
 if edad_user >= 75 and es_empleado:
     print(f"Al tener {edad_user} y trabajar (Es empleado? Rta: {es_empleado}) su contratacion esta fuera de la ley)")
+
+
+#El ejercicio de los terremotos:
+magnitud = float(input("Ingrese la magnitud del terremoto: "))
+if magnitud >= 7:
+    print("Extremo - Puede causar daños graves a gran escala")
+elif magnitud >= 6 and magnitud < 7:
+    print("Muy Fuerte - Puede causar daños significativos")
+elif magnitud >= 5 and magnitud < 6:
+    print("Fuerte - Puede causar daños en estructuras debiles")
+elif magnitud >= 4 and magnitud < 5:
+    print("Moderado - Sentido por personas, pero generalmente no causa daños")
+elif magnitud >= 3 and magnitud < 4:
+    print("Leve - Ligeramente perceptible")
+else:
+    print("Muy Leve - Imperceptible")
