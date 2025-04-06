@@ -24,3 +24,26 @@ while len(contra) < 10:
         print("ERROR")
 
 print("Contraseña aceptada")
+
+
+#EJEMPLO DE WHILE CON CONTADOR + BANDERA
+
+sueldo_anual = 0
+cont_meses = 1
+
+print("""-------------------------------------------------------------------")
+    MEGA FACTURACION SYSTEM - UN SISTEMA DE CONTROL DE SUELDOS
+    by Nerea | Para finalizar ingrese 0 o valor negativo
+    -------------------------------------------------------------------""")
+
+print("Ingrese el sueldo cobrado en el mes",cont_meses)
+sueldo_mensual = float(input())
+while cont_meses < 12 and sueldo_mensual > 0:
+    sueldo_anual += sueldo_mensual
+    cont_meses += 1
+    print("Ingrese el sueldo cobrado en el mes",cont_meses)
+    sueldo_mensual = float(input())
+if sueldo_mensual > 0:
+    sueldo_anual += sueldo_mensual
+
+print("El sueldo anual es de: $", sueldo_anual)
