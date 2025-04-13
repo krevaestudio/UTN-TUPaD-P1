@@ -123,8 +123,11 @@ print(f"La media de los {LIMITE} números ingresados es {suma/LIMITE}.")
 num_original = int(input("Ingrese un número entero: "))
 num_invertido = 0
 while num_original > 0:
+    #sacamos el MOD del num original para obtener el ultimo digito
     digito = num_original % 10
+    #multiplicamos el num para sumar un digito y le acoplamos el digito 
     num_invertido = num_invertido * 10 + digito
+    #eliminamos el digito que ya usamos del numero original
     num_original //= 10
 
 print(f"El número invertido es {num_invertido}")
