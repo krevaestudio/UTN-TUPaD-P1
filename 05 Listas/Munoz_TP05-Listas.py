@@ -36,3 +36,6 @@ print(numeros)
 #para testear:
 numeros.remove(max(numeros))
 print(numeros)
+print("Viendo lo anterior, lo que hace el programa es ir eliminando el número de mayor valor de la lista")
+print("En el codigo original, se elimina el 22; y en el que repeti para testear, se elimina el 15. Comprobando lo mencionado arriba")
+

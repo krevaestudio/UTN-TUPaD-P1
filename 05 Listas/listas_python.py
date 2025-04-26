@@ -30,4 +30,4 @@ print(german_wrds)
 #Listas anidadas
 rammstein = ["Liebe ist für alle da", ["Radio", "Deutschland","Adieu"], "Mutter", "Herzeleid", "Rosenrot", ["Amerika", "Hallelujah"], "Volkerball"]
 print(rammstein[1])
-print(rammstein[1][0]) # Acceder Radio
+print(rammstein[1][2]) # Acceder Adieu
